@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>サイトタイトル</title>
+ <meta name="description" content="ディスクリプションを入力">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="sample.css">
+ <!-- [endif] -->
+ <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ </head>
+ <body>
+ <!----- header----->
+ <header></header>
+ <nav></nav>
+ <!----- /header ----->
+ 
+ <!----- main ----->
+ <div>
+ <table class="frame_table">
+     <thead>
+         <tr class="table_list">
+         <th>1月</th>
+         <th>2月</th>
+         <th>3月</th>
+         <th>4月</th>
+         <th>5月</th>
+         <th>合計</th>
+        </tr>
+     </thead>
+     <tbody class="table_body">
+         <tr class="table_list">
+             <td class="num1">1000</td>
+             <td class="num2">2200</td>
+             <td class="num3">1200</td>
+             <td class="num4"><input type="text" class="inputVal" id='inputVal1'/></td>
+             <td class="num5">3000</td>
+             <td class="answer"></td>
+         </tr>
+         <tr class="table_list sub">
+            <td class="num1">1000</td>
+            <td class="num2">1000</td>
+            <td class="num3">2000</td>
+            <td class="num4"><input type="text" class="inputVal" id='inputVal2'/></td>
+            <td class="num5">9000</td>
+            <td class="answer"></td>
+        </tr>
+        <tr class="table_list sub">
+            <td ></td>
+            <td></td>
+            <td ></td>
+            <td class="answer2"></td>
+            <td></td>
+            <td class=""></td>
+        </tr>
+     </tbody>
+ </table>
+<div>
+    <button id="autoInput">自動入力</button>
+</div>
+</div>
+ <!----- /main ----->
+ 
+ <!----- footer ----->
+ <!----- /footer ----->
+ <script src="sample.js"></script>
+ </body>
+</html>

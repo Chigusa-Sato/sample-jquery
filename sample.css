@@ -1,0 +1,9 @@
+.frame_table th {
+    background-color: azure;
+    padding: 1px;
+}
+
+.frame_table td{
+    background-color: beige;
+    padding: 1px;
+}
