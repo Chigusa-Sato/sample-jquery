@@ -142,24 +142,24 @@ function removeCommaAll() {
 function calcAnswer2() {
   console.log('recalc');
   //trの数を取得
-  const tr_length = $('.table_body tr').length;
+  const tr_length = 2;
 
-  const answer2 = 0;
+  let answer2 = 0;
   for (let i = 0; i < tr_length; i++) {
     //trごとの各項目の数値を参照
-    let num4 = Number($('.table_body').find(`.inputVal:eq(${i})`).val());
+    let num4 = $('.table_body').find(`.inputVal:eq(${i})`).val();
     if (num4) {
+      //★★★もしコンマ区切りならコンマを外して数値に直す
       console.log(num4);
-      answer2 = answer2 + num4;
+      answer2 = answer2 + Number(num4);
+    } else {
+      let nonComma = $('.table_body')
+        .find(`.inputVal:eq(${i})`)
+        .val()
+        .toString()
+        .replace(',', '');
+      console.log(nonComma);
     }
-    // else {
-    //   let nonComma = $('.table_body')
-    //     .find(`.inputVal:eq(${i})`)
-    //     .val(
-    //       $('.table_body').find(`.inputVal:eq(${i})`).val().replace(',', '')
-    //     );
-    //   console.log(nonComma);
-    // }
   }
   console.log(answer2);
   $('.answer2').text(answer2);
